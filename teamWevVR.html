@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+<body>
+
+    <a-scene>
+
+        <!-- sky -->
+    <a-sky src="#sky" position="-100 -100 -100"></a-sky>
+
+    <!-- Ground -->
+    <a-plane
+    width="1000"
+    height="1000"
+    rotation="-90 0 0"
+    <a-image src="#Ground"></a-image>></a-plane>  
+
+        <a-assets>
+          <img id="sky" src="sky.jpg">
+          <img id="Ground" src="grass.jpg">
+          <img id="tamanna" src="TAMANNAMANN.PNG">
+          <img id="tamannapic" src="TAMPIC.PNG">
+          <img id="airport" src="aiirrppoorrttt.PNG">
+          <img id="samraddhi" src="SAMRADDHI.PNG">
+          <img id="samraddhipic" src="samraddhipic.jpg">
+          <img id="princess" src="PRINCESS.PNG">
+          <img id="princesspic" src="princesspic.PNG">
+          <!-- <img id="group" src="GROUP.PNG"> -->
+          <a-asset-item id="walls" src="walllllls.gltf"></a-asset-item>
+          <a-asset-item id="half1" src="half1.gltf"></a-asset-item>
+          <a-asset-item id="half2" src="half2.gltf"></a-asset-item>
+          <!-- <a-asset-item id="walls" src="walllllls.gltf"></a-asset-item> -->
+          <a-asset-item id="plane" src="plane.gltf"></a-asset-item>
+        </a-assets>
+        
+        <a-image src="#tamanna" position="20 13 26" scale="6 4 4" opacity="1" rotation="0 -180 0"></a-image>
+        <a-image src="#tamannapic" position="20 20 26" scale="8 8 8" opacity="1" rotation="0 -180 0"></a-image>
+        <a-image src="#princess" position="-2 13 26" scale="6 4 4" opacity="1" rotation="0 -180 0"></a-image>
+        <a-image src="#princesspic" position="-2 20 26" scale="8 8 8" opacity="1" rotation="0 -180 0"></a-image>
+        <a-image src="#samraddhi" position="10 3 26" scale="6 4 4" opacity="1" rotation="0 -180 0"></a-image>
+        <a-image src="#samraddhipic" position="10 10 26" scale="8 8 8" opacity="1" rotation="0 -180 0"></a-image>
+        <a-image src="#airport" position="-12 12 0" scale="30 22 22" opacity="1" rotation="0 90 0"></a-image>
+        <a-entity gltf-model="#half1" position="0 0 0" rotation="0 0 0" scale="2 2 2"></a-entity>
+        <a-entity gltf-model="#half2" position="0 0 0" rotation="0 0 0" scale="2 2 2"></a-entity>
+        <a-entity gltf-model="#plane" position="0 0 0" rotation="0 0 0" scale="2 2 2"></a-entity>
+        
+
+      </a-scene>
+
+</body>
+</html>
